@@ -7,7 +7,7 @@ namespace Input.Output.Streams
 {
     partial class Program
     {
-        static void HandlingDirectlyFileStream()
+        static void HandleDirectlyFileStream()
         {
             var file = FileConst.FilePath;
             using (var fileStream = new FileStream(file, FileMode.Open))
