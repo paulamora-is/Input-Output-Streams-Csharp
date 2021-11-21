@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace Input.Output.Streams
+﻿namespace Input.Output.Streams
 {
-    class Program
+    partial class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
         }
     }
 }
