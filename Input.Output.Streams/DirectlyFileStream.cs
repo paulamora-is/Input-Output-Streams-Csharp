@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Input.Output.Streams.Constants;
+using System;
 using System.IO;
 using System.Text;
 
@@ -8,7 +9,7 @@ namespace Input.Output.Streams
     {
         static void HandlingDirectlyFileStream()
         {
-            var file = @"D:\Códigos\input-output-streams-csharp\accounts.txt";
+            var file = FileConst.FilePath;
             using (var fileStream = new FileStream(file, FileMode.Open))
             {
                 var buffer = new byte[1024];
@@ -29,6 +30,5 @@ namespace Input.Output.Streams
             var text = enconding.GetString(buffer);
             Console.WriteLine(text);
         }
-
     }
 }
