@@ -33,8 +33,6 @@ namespace Input.Output.Streams
             var holder = binaryReader.ReadString();
 
             Console.WriteLine($"Branch: {branch} / AccountNumber: {accountNumber} / Balance: {balance} / Holder: {holder}");
-
-
         }
     }
 }
