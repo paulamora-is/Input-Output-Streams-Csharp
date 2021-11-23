@@ -9,7 +9,7 @@ namespace Input.Output.Streams
     {
         static void HandleDirectlyFileStream()
         {
-            var file = FileConst.FilePath;
+            var file = FileConst.FilePathAccounts;
             using (var fileStream = new FileStream(file, FileMode.Open))
             {
                 var buffer = new byte[1024];

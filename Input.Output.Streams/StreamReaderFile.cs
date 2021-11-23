@@ -10,7 +10,7 @@ namespace Input.Output.Streams
     {
         static void HandleFileWithStreamReader()
         {
-            var file = FileConst.FilePath;
+            var file = FileConst.FilePathAccounts;
 
             using (var fileStream = new FileStream(file, FileMode.Open))
 
