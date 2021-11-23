@@ -33,18 +33,13 @@ namespace Input.Output.Streams
         {
             var fields = line.Split(',');
 
-            var branch = fields[0];
-            var numberAccount = fields[1];
-            var balance = fields[2];
-            var nameHolder = fields[3];
-
-            var parsedBranch = int.Parse(branch);
-            var parsedNumberAccount = int.Parse(numberAccount);
-            var parsedBalance = double.Parse(balance.Replace('.', ','));
+            var parsedBranch = int.Parse(fields[0]);
+            var parsedNumberAccount = int.Parse(fields[1]);
+            var parsedBalance = double.Parse(fields[2].Replace('.', ','));
 
             var holder = new Client
             {
-                Name = nameHolder
+                Name = fields[3]
             };
             var result = new CurrentAccount(parsedBranch, parsedNumberAccount);
             result.Deposit(parsedBalance);
