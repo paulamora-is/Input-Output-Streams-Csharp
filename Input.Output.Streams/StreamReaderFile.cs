@@ -20,7 +20,7 @@ namespace Input.Output.Streams
                 {
                     string line = reader.ReadLine();
                     var currentAccount = ConvertFileToCurrentAccount(line);
-                    var mesage = $"{currentAccount.Holder.Name} : Conta número { currentAccount.NumberAccount}, ag. { currentAccount.Branch}, Saldo { currentAccount.Balance}";
+                    var mesage = $"{currentAccount.Holder.Name} : Number Account: { currentAccount.NumberAccount}, Branch: { currentAccount.Branch}, Balance: { currentAccount.Balance}";
 
                     Console.WriteLine(mesage);
                 }
